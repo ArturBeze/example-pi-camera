@@ -1,6 +1,7 @@
 import time
 from picamera2 import Picamera2, Preview
 from picamera2.encoders import H264Encoder
+from picamera2 import Metadata
 
 picam2 = Picamera2()
 
@@ -21,3 +22,4 @@ picam2.stop_preview()
 
 #picam2.capture_metadata()["FrameDuration"]
 #picam2.capture_metadata()["SensorTimestamp"]
+#metadata = Metadata(picam2.capture_metadata())
